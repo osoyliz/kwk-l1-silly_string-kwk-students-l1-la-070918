@@ -1,7 +1,7 @@
 
 # Challenge 1: Fill this string in with your favorite word
 
-your_favorite_word = ""
+your_favorite_word = "sleep".upcase
 
 puts "My favorite word is #{your_favorite_word}"
 
@@ -13,7 +13,7 @@ puts "MY FAVORITE WORD IS #{favorite_word_in_all_caps}"
 
 # Challenge 3: Make all the letters of phrase lowercase using a built in Ruby method
 
-phrase = "IM NOT SHOUTING"
+phrase = "IM NOT SHOUTING".downcase
 
 lowercased_phrase = phrase # Put a . after phrase and use a String method.
 
@@ -23,26 +23,27 @@ puts lowercased_phrase
 
 big_word = "supercalifragilisticexpialidocious"
 
-letter_count = big_word # Put a . after big_word and use a String method.
+letter_count = big_word.length
 
 puts "There are #{letter_count} in #{big_word}"
 
 # Challenge 5: Add "wow" and "mom" to big_word
 
-bigger_word = big_word # Use String concatenation to add "wow" and "mom" to big_word
+bigger_word = big_word + " wow " + "mom" 
 
-new_letter_count = bigger_word.size
+new_letter_count = bigger_word.length
 
 puts "There are now #{new_letter_count} in #{bigger_word}"
 
 # Challenge 6: Capitalize this sentence properly
 
-proper_sentence = "i really like programming." # Put a . after the string to capitalize it properly.
+proper_sentence = "i really like programming.".capitalize # Put a . after the string to capitalize it properly.
 
 puts proper_sentence
 
 # Challenge 7: String Switcheroo
-sentence = "Astounding aardvarks, arguably an ancient animal, always ate apples and acorns and artichokes all around Athens, amazing!"
+sentence = "Astounding aardvarks, arguably an ancient animal, always ate apples and acorns and artichokes all around Athens, amazing!".gsub
+
 
 # Swap all `A` for `O`, as well as all `a` for `o`. You need to chain `gsub`s.
 
